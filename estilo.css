@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -7,7 +7,7 @@ body {
     color: #333;
   }
   
-  /* Contenedor principal */
+
   .container {
     max-width: 600px;
     margin: 40px auto;
@@ -17,14 +17,14 @@ body {
     padding: 20px;
   }
   
-  /* Título */
+
   h1 {
     text-align: center;
     color: #444;
     margin-bottom: 20px;
   }
   
-  /* Formulario y elementos */
+
   form {
     display: flex;
     flex-direction: column;
@@ -49,7 +49,7 @@ body {
     border-color: #6B73FF;
   }
   
-  /* Botón */
+
   button {
     background-color: #6B73FF;
     color: #fff;
@@ -65,8 +65,7 @@ body {
     background-color: #ccc;
     cursor: not-allowed;
   }
-  
-  /* Sección de resultados */
+
   .result {
     margin-top: 20px;
     padding: 15px;
@@ -80,7 +79,7 @@ body {
     font-weight: bold;
   }
   
-  /* Detalle del producto */
+
   .product-detail {
     border: 1px solid #ddd;
     border-radius: 4px;
