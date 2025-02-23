@@ -14,7 +14,6 @@ async function loadCategories() {
     const response = await fetch(`${API_BASE}/products/categories`);
     const data = await response.json();
     
-    // Se espera un array de cadenas; si por alguna razón son objetos, se intenta extraer una propiedad.
     console.log("Categorías recibidas:", data);
     categorySelect.innerHTML = '<option value="">-- Elige una categoría --</option>';
     data.forEach(item => {
@@ -23,15 +22,13 @@ async function loadCategories() {
       let texto = '';
       
       if (typeof item === 'object' && item !== null) {
-        // Si el objeto tiene propiedad "category", la usamos
         if (item.category) {
           valor = item.category;
           texto = item.category;
         } else if (item.name) {
           valor = item.name;
           texto = item.name;
-        } else {
-          // Sino, se usa JSON.stringify (aunque podría verse como [object Object])
+        } else { 
           valor = JSON.stringify(item);
           texto = JSON.stringify(item);
         }
@@ -143,5 +140,4 @@ document.getElementById('productForm').addEventListener('submit', (e) => {
   }
 });
 
-// Carga inicial de categorías
 loadCategories();
