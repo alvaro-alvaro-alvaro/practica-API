@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Categorías y Productos</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Categorías y Productos</h1>
+    <form id="productForm">
+      <label for="categorySelect">Selecciona una categoría:</label>
+      <select id="categorySelect">
+        <option value="">-- Elige una categoría --</option>
+      </select>
+      
+      <label for="productSelect">Selecciona un producto:</label>
+      <select id="productSelect" disabled>
+        <option value="">-- Elige un producto --</option>
+      </select>
+      
+      <button type="submit" disabled id="showProductBtn">Mostrar Detalle del Producto</button>
+    </form>
+    
+    <div id="result" class="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
